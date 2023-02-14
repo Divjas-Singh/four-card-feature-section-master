@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Divjas-Singh/four-card-feature-section-master)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Divjas-Singh/four-card-feature-section-master](https://github.com/Divjas-Singh/four-card-feature-section-master)
+- Live Site URL: [https://divjas-singh.github.io/four-card-feature-section-master/]([https://your-live-site-url.com](https://divjas-singh.github.io/four-card-feature-section-master/))
 
 ## My process
 
