@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  }
+  html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif
+  }
+  body{
+    padding:5rem;
+    width: 100vw;
+    height: 100vh;
+    /* padding-bottom: 0%; */
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    justify-content: center;
+    gap: 6rem;
+    text-align: center;
+  }
+header {
+  display:grid;
+  gap: 1rem;
+
+}
+
+
+header h1{
+  font-size: 4rem;
+  font-weight: 200;
+  color:hsl(229, 6%, 66%);
+
+}
+header h2{
+  font-weight: 600;
+  font-size: 4rem;
+  color:hsl(234, 12%, 34%);
+}
+
+header p{
+  font-weight: 200;
+  font-size: 1.7rem;
+  color: #b1b1b6;
+
+
+}
+main{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr;
+  gap: 2rem;
+
+
+}
+.card{
+  display: grid;
+  align-content: center;
+}
+.card article{
+  
+  display: grid;
+  box-shadow: rgba(0, 0, 0, 0.1) 0rem 2rem 2.5rem -0.5rem, 
+              rgba(0, 0, 0, 0.04) 0rem 1rem 1rem -0.5rem;
+  border-radius: 0.5rem;
+  gap:4rem;
+  padding: 2.2rem;
+}
+
+.card svg{
+  justify-self: end;
+  align-self: end;
+}
+#card1{
+  grid-row: 1 / span 3;
+}
+#card1 article{ border-top:0.5rem solid cyan;}
+#card2 article{ border-top:0.5rem solid hsl(0, 78%, 62%)}
+#card3 article{ border-top:0.5rem solid hsl(34, 97%, 64%) ;}
+#card4 article{ border-top:0.5rem solid hsl(212, 86%, 64%);}
+
+
+#card4{
+  grid-row: 1 / span 3;
+  grid-column: 3/ -1;
+}
+article div{
+  display: grid;
+  gap:1rem;
+  justify-items: start;
+}
+
+article h3{
+  font-weight: 400;
+  color:hsl(234, 12%, 34%);
+  font-size:2.3rem
+}
+article p{
+  color: #b1b1b6;
+  font-size: 1.3rem;
+   text-align: left;
+}
+
+@media screen and (max-width:800px) {
+
+  html{
+    font-size: 55%;
+  }
+
+}
+@media screen and (max-width:700px) {
+  body{
+    height: auto;
+  }
+  main{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #card1{
+    grid-row: auto;
+  }
+  #card4{
+    grid-row: auto;
+    grid-column: auto;
+  }
+  .card{
+    align-content: auto;
+  }
+}
+@media screen and (max-width:700px) {
+  main{
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width:450px) {
+  header h1, header h2{
+    font-size: 2.5rem;
+  }
+  header p{
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width:450px) {
+  header h1, header h2{
+    font-size: 2rem;
+  }
+}
